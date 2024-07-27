@@ -1,0 +1,216 @@
+/* ALL CSS Styling for Explore page */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+body {
+  background-color: white;
+}
+
+/* LEFT SIDEBAR */
+.logo-img {
+  width: fit-content;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+.logo-img img {
+  width: 30px;
+}
+.icons-img {
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+}
+.icons-img a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+.icons-img a:hover {
+  background-color: gray;
+}
+.icons-img img {
+  width: 30px;
+  margin-right: 18px;
+  position: relative;
+}
+.profile-info {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+  margin-left: 2rem;
+}
+.profile-info img {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.profile-info p {
+  font-weight: bold;
+  font-size: 18px;
+}
+.profile-info small {
+  font-size: 15px;
+  font-weight: 600;
+  color: gray;
+}
+.post {
+  padding: 20px 90px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  margin-left: 35px;
+  margin-right: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.post:hover {
+  background-color: rgb(22, 130, 200);
+}
+
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  border-right: 1px solid whitesmoke;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.content {
+  flex-basis: 50%;
+  padding: 1rem;
+  border-right: 2px solid whitesmoke;
+  /* border-bottom: 2px solid whitesmoke; */
+}
+.right-sidebar {
+  flex-basis: 30%;
+  padding: 1rem;
+}
+
+/* SEARCH BAR AND NAV TABS */
+.search-bar {
+  background-color: #212121;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  position: sticky; /* Make it sticky */
+  top: 0; /* Stick to the top */
+  z-index: 10; /* Ensure it stays on top of other elements */
+}
+.search-bar input {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.search-bar input::placeholder {
+  color: #ffffff;
+}
+.search-bar svg {
+  cursor: pointer;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 2px solid whitesmoke;
+}
+.nav-tab {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+}
+.nav-tab.active {
+  background-color: #3f51b5;
+}
+
+
+
+/* Trend items styling */
+
+.trend-items-container{
+  margin-top: 1.5rem;
+}
+.trend-items-container .trends-item{
+  margin-bottom: 1.25rem;
+}
+.trend-items-container .trends-item .trend-niche{
+  color: gray;
+}
+.trend-items-container .trends-item .trend-topic{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+}
+.trend-items-container .trends-item .trend-topic span{
+  margin-right: 0.75rem;
+}
+.show-more p{
+  color: rgb(29,155,240);
+  font-size: 1rem;
+}
+
+
+/* RIGHT SIDEBAR CSS */
+.to-follow-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.to-follow-content{
+  position: relative;
+  /* border: 3px solid red; */
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.to-follow-user{
+  font-weight: bolder;
+}
+.to-follow-nickName{
+  font-size: 0.85rem;
+}
+.to-follow button{
+  position: absolute;
+  right: 0.2rem;
+  top: 0.8rem;
+  color: white;
+  background-color: white;
+  padding: 0.25rem .75rem;
+  border: none;
+  background-color: black;
+  border-radius: 10%
+}
